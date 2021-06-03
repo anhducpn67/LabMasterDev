@@ -17,11 +17,12 @@ def main():
     for i in range(0, config.NUM_SAMPLES):
         container = TrainModel(container).execute()
         container = EvaluateModel(container).execute()
-        list_acc.append(container.LOG_TEST_ACC)
+        list_acc.append(container.TEST_ACC)
     statistic_for_sample(list_acc)
 
 
 def statistic_for_sample(samples):
+    print("Test Acc: ", samples)
     print("Sample mean: ", numpy.mean(samples))
     print("Sample variance: ", numpy.var(samples))
     print("Sample std: ", numpy.std(samples))

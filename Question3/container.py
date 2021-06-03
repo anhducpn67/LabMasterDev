@@ -12,4 +12,4 @@ class Container:
         self.TEST_IMAGE = None
         self.TEST_LABEL = None
         self.MODEL = None
-        self.LOG_TEST_ACC = None
+        self.TEST_ACC = None
