@@ -34,7 +34,6 @@ def statistic_for_sample(samples):
     print("Q2: ", numpy.quantile(samples, 0.5))
     print("Q3: ", numpy.quantile(samples, 0.75))
     print("----------------------------------------------------------")
-    plt.xlabel("Log total time")
     plt.hist(samples)
     plt.show()
 
